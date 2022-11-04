@@ -18,6 +18,14 @@ const Main = () => {
   return (
     <div>
       <Header show={show} setShow={setShow} />
+      {show && (
+        <AddTask
+          tasks={tasks}
+          setTasks={setTasks}
+          setData={setData}
+          data={data}
+        />
+      )}
     </div>
   );
 };
