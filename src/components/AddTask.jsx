@@ -19,7 +19,7 @@ const AddTask = ({ tasks, setTasks, setData, data }) => {
   });
 
   return (
-    <form onSubmit={handleSubmit} className="form-control ">
+    <form onSubmit={handleSubmit} className="form-control text-center p-3 ">
       <div>
         <label htmlFor="task">Task</label> <br />
         <input

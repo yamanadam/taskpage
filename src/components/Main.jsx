@@ -16,7 +16,7 @@ const Main = () => {
   );
 
   return (
-    <div>
+    <div className="d-flex flex-column align-items-center justify-content-center text-center p-5">
       <Header show={show} setShow={setShow} />
       {show && (
         <AddTask
@@ -26,6 +26,7 @@ const Main = () => {
           data={data}
         />
       )}
+      <Tasks data={data} setData={setData} />
     </div>
   );
 };
