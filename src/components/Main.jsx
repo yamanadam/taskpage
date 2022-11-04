@@ -15,7 +15,11 @@ const Main = () => {
     JSON.parse(localStorage.getItem("TODOS")) || []
   );
 
-  return <div>Main</div>;
+  return (
+    <div>
+      <Header show={show} setShow={setShow} />
+    </div>
+  );
 };
 
 export default Main;
